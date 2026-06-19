@@ -33,7 +33,7 @@ java -jar JavaFetch.jar
 
 ## License
 
-[MIT](LICENSE.md)
+[MIT](LICENSE)
 
 ## 简体中文
 
@@ -88,5 +88,5 @@ macOS   = 0,220,60 > 160,30,230
 
 ## License
 
-[MIT](LICENSE.md)
+[MIT](LICENSE)
 
