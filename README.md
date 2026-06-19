@@ -10,9 +10,9 @@ Cross-platform system information tool, Neofetch-style ASCII art (supports iOS)
 
 ### Features
 
--Identify common Linux distributions, Android, Windows, and iOS
--Identify system information, display username
--` Javafetch. conf ` configurable colors and icons
+- Identify common Linux distributions, Android, Windows, and iOS
+- Identify system information, display username
+- ` Javafetch. conf ` configurable colors and icons
 
 ### Build
 
