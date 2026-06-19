@@ -25,7 +25,7 @@ jobs:
       - name: Package JAR
         run: |
           cp MANIFEST.MF out/
-          cp javafetch.conf out/
+          cp config/javafetch.conf out/
           cd out
           jar cvfm ../JavaFetch.jar MANIFEST.MF *.class javafetch.conf
 
