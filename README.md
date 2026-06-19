@@ -29,7 +29,7 @@ java -jar JavaFetch.jar
 ```
 ## Screenshot
 
-![Use under iOS](screenshot.png)
+![Use under iOS](screenshot.jpg)
 
 ## License
 
@@ -84,7 +84,7 @@ macOS   = 0,220,60 > 160,30,230
 
 ## 截图
 
-![iOS下使用](screenshot.png)
+![iOS下使用](screenshot.jpg)
 
 ## License
 
