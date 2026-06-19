@@ -1,0 +1,36 @@
+name: Build JAR
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Compile
+        run: javac -d out src/JavaFetch.java
+
+      - name: Package JAR
+        run: |
+          cp MANIFEST.MF out/
+          cp javafetch.conf out/
+          cd out
+          jar cvfm ../JavaFetch.jar MANIFEST.MF *.class javafetch.conf
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: JavaFetch
+          path: JavaFetch.jar
